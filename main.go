@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
-	"golangtestingexamples/calculator"
+	"golangtestingexamples/cooker"
 )
 
 func main(){
-	a := 1
-	b := 2
-	sum := calculator.Add(a, b)
-	fmt.Printf("The value of the sum is %d", sum)
+	stove := &cooker.Stove{}
+	cooker := &cooker.Cooker{Stove: stove}
+	food := "chicken"
+	cookedFood := cooker.Cook(food)
+	fmt.Println(cookedFood)
 }
