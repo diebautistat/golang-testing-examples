@@ -1,7 +1,7 @@
 package cooker
 
 type Cooker struct {
-	Stove *Stove
+	Stove CookingStove
 }
 
 func (c *Cooker) Cook(food string) (string) {

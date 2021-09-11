@@ -2,6 +2,12 @@ package cooker
 
 import "fmt"
 
+type CookingStove interface {
+	Light()
+	TurnOff()
+	Cook(string) string
+}
+
 type Stove struct {
 	lightBulb bool
 }
